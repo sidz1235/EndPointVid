@@ -1,5 +1,5 @@
+
 import psycopg2
-import json
 
 # Define the connection parameters
 hostname = '49.206.192.143'
@@ -77,13 +77,9 @@ def fetch_data_by_mobile_number(mobile_number, country_code):
         }
         rows_as_json.append(row_json)
     
-    # if rows_as_json:
-    #     print("Data found for the given mobile number (sorted by timestamp):")
-    #     for row_json in rows_as_json:
-    #         print(json.dumps(row_json, indent=4))  # Print each row as JSON with indentation
-    # else:
-    #     print("No data found for the given mobile number.")
+
     return rows_as_json
+
 
     
 

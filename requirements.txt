@@ -7,4 +7,5 @@ librosa
 openai
 pydub
 moviepy
-psycopg2-binary
+requests
+gunicorn
